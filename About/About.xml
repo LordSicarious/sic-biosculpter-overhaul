@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[SIC] Ultratech Biosculpter Overhaul</name>
+	<author>Sicarious</author>
+	<supportedVersions>
+	<li>1.3</li>
+	</supportedVersions>
+	<packageId>SIC.Ideology.BiosculpterOverhaul</packageId>
+	<description>A complete rework of Biosculpter Pods to give them the utility - and the cost - that they deserved.</description>
+  	<modDependencies>
+	  	<li>
+  			<packageId>brrainz.harmony</packageId>
+  			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld</downloadUrl>
+  		</li>
+	  	<li>
+  			<packageId>Ludeon.RimWorld.Ideology</packageId>
+  			<displayName>Ideology</displayName>
+  		</li>
+  	</modDependencies>
+  	<loadAfter>
+  		<li>brrainz.harmony</li>
+  		<li>Ludeon.RimWorld.Ideology</li>
+  	</loadAfter>
+</ModMetaData>

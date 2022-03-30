@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Make the Biosculpter Pod effects less intense. -->
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Patch EffecterDefs -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/EffecterDef [defName="BiosculpterPod_Ready"]/children/li [fleckDef="BiosculpterScanner_Ready"]/ticksBetweenMotes</xpath>
+                <value><ticksBetweenMotes>240</ticksBetweenMotes></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/EffecterDef [defName="BiosculpterPod_Operating"]/children/li [fleckDef="BiosculpterScanner_Forward"]/speed</xpath>
+                <value><speed>-0.26</speed></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/EffecterDef [defName="BiosculpterPod_Operating"]/children/li [fleckDef="BiosculpterScanner_Backward"]/speed</xpath>
+                <value><speed>0.5</speed></value>
+            </li>
+
+            <!-- Ready Fleck -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Ready"]/altitudeLayerIncOffset</xpath>
+                <value><altitudeLayerIncOffset>-1.5</altitudeLayerIncOffset></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Ready"]/fadeInTime</xpath>
+                <value><fadeInTime>2.5</fadeInTime></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Ready"]/solidTime</xpath>
+                <value><solidTime>0.5</solidTime></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Ready"]/fadeOutTime</xpath>
+                <value><fadeOutTime>2.0</fadeOutTime></value>
+            </li>
+            <!-- Operating/Forward Fleck -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Forward"]/altitudeLayerIncOffset</xpath>
+                <value><altitudeLayerIncOffset>-1.0</altitudeLayerIncOffset></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Forward"]/fadeInTime</xpath>
+                <value><fadeInTime>2</fadeInTime></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Forward"]/solidTime</xpath>
+                <value><solidTime>0.4</solidTime></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Forward"]/fadeOutTime</xpath>
+                <value><fadeOutTime>1.6</fadeOutTime></value>
+            </li>
+            <!-- Operating/Backward Fleck -->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Backward"]/altitudeLayerIncOffset</xpath>
+                <value><altitudeLayerIncOffset>-1.0</altitudeLayerIncOffset></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Backward"]/fadeInTime</xpath>
+                <value><fadeInTime>2</fadeInTime></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Backward"]/solidTime</xpath>
+                <value><solidTime>0.4</solidTime></value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FleckDef [defName="BiosculpterScanner_Backward"]/fadeOutTime</xpath>
+                <value><fadeOutTime>1.6</fadeOutTime></value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

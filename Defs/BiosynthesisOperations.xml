@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Biosculpter Pod Operations that require the Biosynthesis research. -->
+<!-- Advanced Operations:
+    1) Restore Digits (Fingers, Toes)
+    2) Restore Limb (Arm/s, Leg/s)
+    3) Restore Organ (Kidney/s, Liver, Lung/s, Stomach, Eye/s, Ear/s, Nose, Tongue)
+    4) Repair Jaw
+    5) Deep Scar Removal (Heart, Brain, Stomach, Lung/s, Liver, Kidney/s)
+    6) Age Reduction
+    7) Cure Degenerative Condition (Alzheimer's, Asthma, Bad Back, Carcinoma, Dementia, Frail, Hearing Loss, Cirrhosis, Chemical Damage, Trauma Savant)
+    8) Purge Addiction // Does not work on Luciferium Addiction, or Trait-induced needs
+    9) Skintone Adjustment // Include sliders to allow for  unnatural skintones as well
+    10) Sex Adjustment (Male, Female)
+-->
+<Defs>
+</Defs>

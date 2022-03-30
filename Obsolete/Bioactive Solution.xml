@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>BioactiveSolution</defName>
+    <label>bioactive solution</label>
+    <description>A thick slurry of refined nutrients and nanite-infused bioactive gel, used in biosculpter pods as both the fuel and the means for the induced metamorphoses.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/BioactiveSolution</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>0.50</Mass>
+      <Flammability>1.5</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Recipe to make it, because recipeMakers can't handle nutrition-->
+  <RecipeDef>
+    <defName>Make_BioactiveSolution</defName>
+    <label>make bioactive solution</label>
+    <description>Synthesise a batch of bioactive solution for use in biosculpter pods.</description>
+    <jobString>Synthesising bioactive solution.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>4000</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>BiosculpterOverhaul.IngredientValueGetter_NutritionAndFixed</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Foods</li>
+            <li>PlantMatter</li>
+          </categories>
+          <disallowedThingDefs>
+            <li>Hay</li>
+            <li>Dye</li>
+          </disallowedThingDefs>
+          <disallowedCategories>
+            <li>FoodMeals</li>
+          </disallowedCategories>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Foods</li>
+        <li>PlantMatter</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Hay</li>
+        <li>Dye</li>
+      </disallowedThingDefs>
+      <thingDefs>
+        <li>MedicineUltratech</li>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </defaultIngredientFilter>
+    <products>
+      <BioactiveSolution>1</BioactiveSolution>
+    </products>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+    <researchPrerequisite>Biosculpting</researchPrerequisite>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Putting things in the pod -->
+    <EnterOverhauledBiosculpterPod>Enter biosculpter pod.</EnterOverhauledBiosculpterPod>
+    <OpenOverhauledBiosculpterPod>Open biosculpter pod.</OpenOverhauledBiosculpterPod>
+    <CarryToOverhauledBiosculpterPod>Carry {1_label} to biosculpter pod.</CarryToOverhauledBiosculpterPod>
+    <NoOverhauledBiosculpterPod>No available biosculpter pod.</NoOverhauledBiosculpterPod>
+    <CannotCarryToOverhauledBiosculpterPod>Cannot carry to biosculpter pod.</CannotCarryToOverhauledBiosculpterPod>
+    <OverhauledBiosculpterPodGuestsNotAllowed>Temporary faction members not allowed.</OverhauledBiosculpterPodGuestsNotAllowed>
+    <OverhauledBiosculpterPodGuestPrisonersNotAllowed>Hosted prisoners not allowed.</OverhauledBiosculpterPodGuestPrisonersNotAllowed>
+    <OverhauledBiosculpterPodOccupied>Biosculpter pod is already occupied.</OverhauledBiosculpterPodOccupied>
+
+    <!-- Pod power messages -->
+    <OverhauledBiosculpterPodUnpowered>Biosculpter pod requires power.</OverhauledBiosculpterPodUnpowered>
+    <BiosculpterNoPowerWillEjectMessage>Power lost at biosculpter pod containing {1_label}. Restore power immediately or {1_label} will be ejected.</BiosculpterNoPowerWillEjectMessage>
+    <BiosculpterPowerRestoredMessage>Power restored at biosculpter pod containing {1_label}.</BiosculpterPowerRestoredMessage>
+
+    <!-- Building UI -->
+    <Occupant>Occupant</Occupant>
+    <CommandSculptPawn>Biosculpting</CommandSculptPawn>
+    <CommandSculptPawnDescEmpty>Plan biosculpter operations for the occupant.</CommandSculptPawnDescEmpty>
+    <CommandSculptPawnDescOccupied>Plan biosculpter operations for {1_label}.</CommandSculptPawnDescOccupied>
+    <CommandSculptPawnFailEmpty>Requires an occupant to initialise biosculpting.</CommandSculptPawnFailEmpty>
+
+    <!-- Dialog UI -->
+    <BiosculptingHeader>Biosculpting</BiosculptingHeader>
+    <OverviewHeader>Overview</OverviewHeader>
+    <TabBiosculpterTreatments>Treatments</TabBiosculpterTreatments>
+    <TabBiosculpterAdjustments>Adjustments</TabBiosculpterAdjustments>
+    <TabBiosculpterEnhancements>Enhancements</TabBiosculpterEnhancements>
+    <NaturalSkintones>Natural</NaturalSkintones>
+    <SyntheticSkintones>Synthetic</SyntheticSkintones>
+    <BiosculptingWillUpsetPawn>will be upset by {0} features.</BiosculptingWillUpsetPawn>
+    <NewAdjustments>New Adjustments</NewAdjustments>
+    <Darken>Darken</Darken>
+    <Lighten>Lighten</Lighten>
+    <AllowAnyGender>Allow Any Gender</AllowAnyGender>
+
+    <!-- Features -->
+    <Crown>Crown</Crown>
+    <Face>Face</Face>
+    <Jawline>Jawline</Jawline>
+    <Body>Body</Body>
+    <Sex>Sex</Sex>
+    <Skin>Skin</Skin>
+
+    <!-- Slider Labels -->
+    <Melanin>Melanin</Melanin>
+    <Red>Red</Red>
+    <Green>Green</Green>
+    <Blue>Blue</Blue>
+
+</LanguageData>

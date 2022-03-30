@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Biosculpter Pod Operations that only require the Biosculpting research. -->
+<!-- Basic Operations:
+    1) Accelerated Healing (Any wound)
+    2) Surface Scar Removal (Torso, Head, Arm/s, Leg/s, Eye/s, Nose)
+    3) Purge Infectious Disease (Flu, Plague, Malaria, Infection, Sleeping Sickness, Scaria, Gutworms, Muscle Parasites) // Cannot purge Blood Rot or Paralytic Abasia
+    4) Purge Physical Ailment (Artery Blockage, Cataract, Food Poisoning, Toxic Buildup, Pregnancy)
+    5) Stabilise Heartbeat (Heart Attack)
+    6) Body Adjustment (Male, Female, Thin, Hulking, Heavyset) // Min Artistic Skill 4
+    7) Head Adjustment (Wide, Narrow) // Min Artistic Skill 4
+    8) Jawline Adjustment (Broad, Average, Pointy) // Min Artistic Skill 4
+    9) Aesthetic Enchancement (Staggeringly Ugly to Ugly, Ugly to none, none to Pretty, Pretty to Beautiful) // Min Artistic Skill 2/6/10/14
+    10) Vocal Enhancement (purge Annoying Voice or Creepy Breathing traits) // Min Artistic Skill 4
+-->
+<Defs>
+  <RecipeDef Abstract="True" Name="BiosculpterOperation">
+    <!-- <effectWorking>Surgery</effectWorking> // Replace later-->
+    <!-- <soundWorking>Recipe_Surgery</soundWorking> // Replace later-->
+    <workSpeedStat>BiosculpterOperatingSkill</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>10</workSkillLearnFactor>
+    <jobString>Operating Biosculpter.</jobString>
+    <!-- <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients> // Replace later-->
+     <!-- <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter> // Replace later-->
+  </RecipeDef>
+
+ <!-- Accelerated Healing: Rapidly heals temporary damage to any part. -->
+  <!--<RecipeDef ParentName="BiosculpterOperation">
+    <defName>Biosculpter_AcceleratedHealing</defName>
+    <label>accelerated healing</label>
+    <description>Rapidly heal ordinary flesh wounds.</description>
+    <workerClass>BiosculpterOverhaul.BiosculpterOperation_AcceleratedHealing</workerClass>
+    <workAmount>1000</workAmount>
+  </RecipeDef>-->
+</Defs>

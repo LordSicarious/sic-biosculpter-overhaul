@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Deletes the VAE research projects and adds a new project to incorporate those that aren't consoliated into vanilla projects. -->
+<Patch>
+  <Operation Class="PatchOperationSequence" MayRequire="ludeon.rimworld.royalty">
+    <operations>
+    <!-- Move Vitals Monitor. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="VitalsMonitor"]/researchViewX</xpath>
+        <value><researchViewX>14.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="VitalsMonitor"]/researchViewY</xpath>
+        <value><researchViewY>0.80</researchViewY></value>
+      </li>
+    <!-- Biosculpting is now Ultra tech, requires Vitals Monitor and Cryptosleep Caskets research. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="Biosculpting"]</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>Biosculpting</defName>
+            <label>biosculpting</label>
+            <description>Construct biosculpter pods, sophisticated medical devices that allow a skilled operator to reshape someone's body from the inside-out using a nanite-infused bioactive gel, while in a state of semi-suspended animation.\n\nThese devices are akin to those found on Glitterworlds, automating much of the treatment process and allowing for comprehensive cosmetic surgeries.</description>
+            <baseCost>4000</baseCost>
+            <techLevel>Ultra</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <requiredResearchFacilities>
+              <li>MultiAnalyzer</li>
+            </requiredResearchFacilities>
+            <prerequisites>
+              <li>VitalsMonitor</li>
+              <li>Cryptosleep</li>
+            </prerequisites>
+            <hiddenPrerequisites>
+              <li>NutrientPaste</li>
+            </hiddenPrerequisites>
+            <researchViewX>16.00</researchViewX>
+            <researchViewY>0.80</researchViewY>
+          </ResearchProjectDef>
+        </value>
+      </li>
+    <!-- Bioregeneration is now Ultra tech. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="Bioregeneration"]</xpath>
+        <value>
+          <ResearchProjectDef>
+            <defName>Bioregeneration</defName>
+            <label>biosynthesis</label>
+            <description>Unlock the full potential of biosculpter pods, allowing them to synthesise entirely new limbs and organs from the patients' genetic material, allowing them to reverse the ageing process, cure degenerative conditions, and permanently alter a patient's physiology at the cellular or even genetic level, completely redefining their physical form.</description>
+            <baseCost>6000</baseCost>
+            <techLevel>Ultra</techLevel>
+            <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+            <requiredResearchFacilities>
+              <li>MultiAnalyzer</li>
+            </requiredResearchFacilities>
+            <prerequisites>
+              <li>Biosculpting</li>
+            </prerequisites>
+            <researchViewX>17.00</researchViewX>
+            <researchViewY>0.80</researchViewY>
+          </ResearchProjectDef>
+        </value>
+      </li>
+    <!-- Move Cryptosleep Casket. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="Cryptosleep"]/researchViewX</xpath>
+        <value><researchViewX>14.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="Cryptosleep"]/researchViewY</xpath>
+        <value><researchViewY>1.50</researchViewY></value>
+      </li>
+    <!-- Move Recon Armour. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ReconArmor"]/researchViewX</xpath>
+        <value><researchViewX>15.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ReconArmor"]/researchViewY</xpath>
+        <value><researchViewY>2.20</researchViewY></value>
+      </li>
+    <!-- Move Marine Armour. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="PoweredArmor"]/researchViewX</xpath>
+        <value><researchViewX>16.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="PoweredArmor"]/researchViewY</xpath>
+        <value><researchViewY>2.20</researchViewY></value>
+      </li>
+    <!-- Move Cataphract Armour. -->
+      <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>/Defs/ResearchProjectDef [defName="CataphractArmor"]/researchViewX</xpath>
+        <value><researchViewX>17.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>/Defs/ResearchProjectDef [defName="CataphractArmor"]/researchViewY</xpath>
+        <value><researchViewY>2.20</researchViewY></value>
+      </li>
+    <!-- Move Ship Cryptosleep Caskets. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ShipCryptosleep"]/researchViewX</xpath>
+        <value><researchViewX>19.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ShipCryptosleep"]/researchViewY</xpath>
+        <value><researchViewY>1.50</researchViewY></value>
+      </li>
+    <!-- Move Machine Persuasion. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ShipComputerCore"]/researchViewX</xpath>
+        <value><researchViewX>19.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ShipComputerCore"]/researchViewY</xpath>
+        <value><researchViewY>2.90</researchViewY></value>
+      </li>
+    <!-- Move Starship Reactor. -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ShipReactor"]/researchViewX</xpath>
+        <value><researchViewX>19.00</researchViewX></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef [defName="ShipReactor"]/researchViewY</xpath>
+        <value><researchViewY>3.80</researchViewY></value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

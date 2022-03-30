@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>Biorefuel</defName>
+    <driverClass>BiosculpterOverhaul.JobDriver_Biorefuel</driverClass>
+    <reportString>biorefueling TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>Biorefuel</defName>
+    <label>refuel nutrition-powered buildings</label>
+    <giverClass>BiosculpterOverhaul.WorkGiver_Biorefuel</giverClass>
+    <workType>Hauling</workType>
+    <verb>biorefuel</verb>
+    <gerund>biorefueling</gerund>
+    <priorityInType>139</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>
